@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.Left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.Right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/*Side bar*/
+.Sidebar {
+  width: 400px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.Name {
+  margin-top: 40px;
+  margin-left: 39px;
+}
+
+.Menu {
+  margin-top: 40px;
+  margin-left: 39px;
+  margin-right: 39px;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.Menu-group {
+  margin-top: 14px;
+}
+
+.Menu-2 {
+  padding: 0;
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: 50px;
+  width: 100;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+hr {
+  margin-top: 14px;
+  width: 100%;
+  border-top: 2px solid black;
+}
+
+/*Home*/
+.Main-content {
+  margin: 0;
+  display: flex;
+  flex-grow: 1;
+}
+
+.Intro {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+}
+
+/*text style*/
+
+.Text-1 {
+  font-family: Roboto;
+  font-size: 65px;
+  line-height: 1.17;
+  letter-spacing: 10px;
+  text-align: left;
+  color: #000000;
+}
+
+.Text-2 {
+  font-family: Roboto;
+  font-size: 40px;
+  line-height: 1.16;
+  letter-spacing: 5px;
+  text-align: left;
+  color: #000000;
+}
+
+.Text-3 {
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 3px;
+
+  text-align: left;
+  color: #000000;
+}
+
+.Text-4 {
+  font-family: Roboto;
+  font-size: 100px;
+  line-height: 1.17;
+  letter-spacing: 15px;
+  text-align: left;
+  color: #000000;
+}
+
+.Text-footer {
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: #676767;
+}
+
+/*Animation*/
+@media (prefers-reduced-motion: no-preference) {
+  .Gantan {
+    animation: Gantan-spin infinite 5s linear;
+  }
+}
+
+@keyframes Gantan-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/

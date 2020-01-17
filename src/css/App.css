@@ -3,42 +3,68 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .App {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
   min-height: 100vh;
   display: flex;
-  flex-direction: row;
 }
 
-.Left {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
+.Background {
+  z-index: -1;
 }
 
-.Right {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
+/*Nav*/
+.Navheader {
+  z-index: 900;
+  position: fixed;
+  top: 15px;
+  left: 39px;
+}
+
+.Navdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Navline {
+  width: 30px;
+  height: 5px;
+  background: black;
 }
 
 /*Side bar*/
 .Sidebar {
-  width: 400px;
-  min-height: 100vh;
+  z-index: 100;
+  width: 320px;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
 .Name {
-  margin-top: 40px;
+  margin-top: 45px;
   margin-left: 39px;
 }
 
 .Menu {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 39px;
   margin-right: 39px;
   padding: 0;
@@ -60,7 +86,7 @@
 }
 
 .footer {
-  margin-top: 50px;
+  margin-top: 20px;
   width: 100;
   margin-bottom: 0px;
   display: flex;
@@ -76,15 +102,19 @@ hr {
 }
 
 /*Home*/
-.Main-content {
-  margin: 0;
+.Main {
+  z-index: 0;
   display: flex;
-  flex-grow: 1;
+  flex: 1;
+  flex-direction: column;
+  overflow: auto;
 }
 
 .Intro {
+  min-height: 100vh;
   width: 100%;
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -95,7 +125,42 @@ hr {
   flex-direction: row;
 }
 
+/*List*/
+.Work {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.List {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.List-sub {
+  padding-top: 40px;
+}
+
+.List-work {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.List img {
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+}
+
 /*text style*/
+
+.Link:hover {
+  color: red;
+}
 
 .Text-1 {
   font-family: Roboto;
@@ -108,7 +173,7 @@ hr {
 
 .Text-2 {
   font-family: Roboto;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 1.16;
   letter-spacing: 5px;
   text-align: left;

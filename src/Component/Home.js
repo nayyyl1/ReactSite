@@ -1,8 +1,10 @@
 import React from "react";
+import Works from "./Works";
+import Background from "./Background";
 
 function Home() {
   return (
-    <div className="Main-content">
+    <div className="Main">
       <div className="Intro">
         <div>
           <div className="Row Text-4">

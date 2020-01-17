@@ -2,12 +2,14 @@ import React from "react";
 import logo from "./image/me.png";
 import "./css/App.css";
 import Home from "./Component/Home";
-import Sidebar from "./Component/Sidebar";
+import Background from "./Component/Background";
+import SidebarContainer from "./Component/SidebarContainer";
 
 function App() {
   return (
     <div className="App">
-      <Sidebar></Sidebar>
+      <Background></Background>
+      <SidebarContainer></SidebarContainer>
       <Home></Home>
     </div>
   );

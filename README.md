@@ -5,3 +5,5 @@ This is my personal website build with React.js and P5.js. It is still a work-in
 Main features: Responsive Sidebar, interactive P5.js background (mouseClicked), simple CSS animation
 
 Future plan: multipage react site development with react-route. More interactive animation
+
+https://nayyyl1.github.io/ReactSite/
